@@ -13,7 +13,8 @@
         <entry key="root">
           <value>
             <ProjectSettingsEntry>
-              <option name="confDir" value="C:\Users\srinath\Desktop\daily-activities-2022\2022-05-21\crawler\app" />
+              <option name="sourceDir" value="C:\Users\srinath\Desktop\daily-activities-2022\2022-05-21\crawler\app" />
+              <option name="confDir" value="C:\Users\srinath\Desktop\daily-activities-2022\2022-05-21\scalaplaycrawler\app" />
               <option name="templateImports">
                 <list>
                   <option value="_root_.play.twirl.api.TwirlFeatureImports._" />
@@ -36,7 +37,7 @@
                   <option value="controllers.Assets.Asset" />
                 </list>
               </option>
-              <option name="uri" value="/C:/Users/srinath/Desktop/daily-activities-2022/2022-05-21/crawler" />
+              <option name="uri" value="/C:/Users/srinath/Desktop/daily-activities-2022/2022-05-21/scalaplaycrawler" />
             </ProjectSettingsEntry>
           </value>
         </entry>
