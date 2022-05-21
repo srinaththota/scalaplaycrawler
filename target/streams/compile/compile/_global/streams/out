@@ -1,0 +1,7 @@
+[warn] C:\Users\srinath\Desktop\daily-activities-2022\2022-05-21\crawler\app\controllers\HomeController.scala:7:3: enclosing method index has result type Unit: return value of type play.mvc.Result discarded
+[warn]   return ok("sometext")
+[warn]   ^
+[error] C:\Users\srinath\Desktop\daily-activities-2022\2022-05-21\crawler\conf\routes:1:1: Cannot use a method returning Unit as a Handler for requests
+[error] GET     /                           controllers.HomeController.index()
+[warn] one warning found
+[error] one error found
