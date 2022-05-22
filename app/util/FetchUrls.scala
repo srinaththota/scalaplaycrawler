@@ -3,7 +3,7 @@ import java.io.{BufferedReader, InputStreamReader}
 import java.net.URL
 class FetchUrls(url:String) {
 
-  def listDownUrls:StringBuilder={
+  def fetchData:StringBuilder={
 
     val urlObj = new URL(url)
     val in = new BufferedReader(new InputStreamReader(urlObj.openStream))

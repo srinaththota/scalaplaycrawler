@@ -26,7 +26,7 @@ class HomeController @Inject()(cc:ControllerComponents,crawlerService:CrawlerSer
         while(iterator.hasNext){
           var url = iterator.next()
           url = url.replaceAll("\"","");
-          val response = Response(url,crawlerService.ListProductUrls(url).toString)
+          val response = Response(url,crawlerService.fetchData(url).toString)
           val jsonString = write(response)
           list ::= jsonString
         }

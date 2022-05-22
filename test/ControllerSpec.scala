@@ -10,7 +10,7 @@ class ControllerSpec extends PlaySpec {
 
     }
     "method should return string " in {
-      
+
     }
   }
 }

@@ -17,7 +17,7 @@ object Fetcher{
 }
 class CrawlerService  @Inject() (system:ActorSystem){
 
-  def ListProductUrls(url:String):Any = {
+  def fetchData(url:String):Any = {
 
     val user = system.actorOf(Fetcher.props)
     implicit val timeout:Timeout = Timeout(6 seconds)
