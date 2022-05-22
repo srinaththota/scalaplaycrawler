@@ -12,16 +12,17 @@ import scala.concurrent.{Await, ExecutionContext}
 import scala.concurrent.duration._
 import scala.language.postfixOps
 
-object Fetcher{
-  def props = Props(new CrawlActor("crawlerTypeFetch"))
-}
+
 class CrawlerService  @Inject() (system:ActorSystem){
 
   def fetchData(url:String):Any = {
+    object Fetcher{
+      def props = Props(new CrawlActor("url"))
+    }
 
-    val user = system.actorOf(Fetcher.props)
+    val retailerActor = system.actorOf(Fetcher.props)
     implicit val timeout:Timeout = Timeout(6 seconds)
-    val actorData = user ? url
+    val actorData = retailerActor ? url
 
     val res=Await.result(actorData,6.seconds)
 
