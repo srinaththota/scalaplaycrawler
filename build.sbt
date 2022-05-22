@@ -18,8 +18,3 @@ libraryDependencies += "net.liftweb" %% "lift-json" % "3.5.0"
 
 
 
-// https://mvnrepository.com/artifact/com.typesafe.play/play-slick-evolutions
-libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-slick" % "5.0.0",
-  "com.typesafe.play" %% "play-slick-evolutions" % "5.0.0"
-)
