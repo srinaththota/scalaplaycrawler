@@ -23,15 +23,8 @@ class CrawlerService  @Inject() (system:ActorSystem){
     implicit val timeout:Timeout = Timeout(6 seconds)
     val actorData = user ? url
 
-    import scala.concurrent.ExecutionContext.Implicits.global
-
-    val result = actorData.onComplete{
-      case Success(value)=>value
-      case Failure(exception)=>exception
-    }
-
     val res=Await.result(actorData,6.seconds)
-    println(res)
+
     res
   }
 }
